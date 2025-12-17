@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net7.0;net8.0;net9.0;net10.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <LangVersion>latest</LangVersion>
+    
+    <!-- NuGet Package Metadata -->
+    <PackageId>Nazeh.RateLimiting</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Ahmed Nazeh</Authors>
+    <Company>Nazeh</Company>
+    <Title>Easy Rate Limiting for ASP.NET Core</Title>
+    <Description>A simple, configurable wrapper around ASP.NET Core Rate Limiting with support for multiple policies, IP-based limiting, and easy configuration through appsettings.json. Supports .NET 7, 8, 9, and 10.</Description>
+    <PackageTags>ratelimiting;aspnetcore;middleware;throttling;api;ratelimit;security;ddos-protection</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/AhmedNazeh/Nazeh.RateLimiting</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AhmedNazeh/Nazeh.RateLimiting</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>Initial release v1.0.0 - Easy rate limiting with configurable policies for .NET 7+</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Required to access HttpContext and RateLimiting APIs -->
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Exclude SampleApp from compilation -->
+    <Compile Remove="SampleApp\**" />
+    <EmbeddedResource Remove="SampleApp\**" />
+    <None Remove="SampleApp\**" />
+  </ItemGroup>
+
+</Project>
