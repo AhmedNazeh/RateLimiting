@@ -16,8 +16,8 @@
     <Description>A simple, configurable wrapper around ASP.NET Core Rate Limiting with support for multiple policies, IP-based limiting, and easy configuration through appsettings.json. Supports .NET 7, 8, 9, and 10.</Description>
     <PackageTags>ratelimiting;aspnetcore;middleware;throttling;api;ratelimit;security;ddos-protection</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/AhmedNazeh/Nazeh.RateLimiting</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/AhmedNazeh/Nazeh.RateLimiting</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/AhmedNazeh/RateLimiting</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AhmedNazeh/RateLimiting</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
